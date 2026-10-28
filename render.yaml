@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: kisandirect-api
+    env: node
+    region: singapore          # closest free region to India
+    plan: free
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      # Set these in Render dashboard (do NOT put real values here):
+      # - key: MONGODB_URI
+      # - key: JWT_SECRET
+      # - key: RESEND_API_KEY
+      # - key: EMAIL_FROM
+      # - key: RESEND_OWNER_EMAIL
+      # - key: EMAIL_DOMAIN_VERIFIED
+      # - key: CLIENT_URL   ← set to your Vercel frontend URL
