@@ -1,0 +1,12 @@
+{
+  "name": "kisandirect",
+  "version": "1.0.0",
+  "description": "KisanDirect — Farmer Marketplace. Sell Direct. Earn More.",
+  "scripts": {
+    "server": "npm start --prefix server",
+    "client": "npm start --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "install:all": "npm install --prefix server && npm install --prefix client"
+  },
+  "keywords": ["kisandirect", "farmer", "marketplace", "agri", "india"]
+}
